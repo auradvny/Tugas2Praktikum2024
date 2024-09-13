@@ -33,7 +33,7 @@ Pada halaman Tampil Data, data tersebut diterima melalui konstruktor kelas Tampi
 
 
 ##### Menampilkan Data di Halaman Tampil Data
-Pada tampil_data.dart, kelas TampilData menerima data nama, nim, dan tahun melalui konstruktor dan menyimpannya di properti final. Di dalam widget build(), data ini digunakan untuk menghitung umur berdasarkan tahun lahir dan ditampilkan di layar menggunakan widget Text dalam sebuah Column.
+Pada `tampil_data.dart`, kelas TampilData menerima data nama, nim, dan tahun melalui konstruktor dan menyimpannya di properti final. Di dalam widget build(), data ini digunakan untuk menghitung umur berdasarkan tahun lahir dan ditampilkan di layar menggunakan widget Text dalam sebuah Column.
 Data nama, nim, tahun, dan umur (hasil perhitungan dari DateTime.now().year - tahun) ditampilkan dengan menggunakan metode buildRow yang menampilkan teks dalam format berbaris.
 
 

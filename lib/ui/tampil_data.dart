@@ -15,6 +15,7 @@ class TampilData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final int umur = DateTime.now().year - tahun;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Perkenalan"),
@@ -22,10 +23,34 @@ class TampilData extends StatelessWidget {
       body: Container(
         margin: const EdgeInsets.all(10),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun"),
+            buildRow('Nama', nama),
+            buildRow('NIM', nim),
+            buildRow('Tahun Lahir', '$tahun'),
+            buildRow('Umur', '$umur tahun'),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget buildRow(String title, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4.0),
+      child: Row(
+        children: [
+          SizedBox(
+            width: 120, // Lebar tetap untuk judul
+            child: Text(
+              '$title',
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
+          Expanded(
+            child: Text(value),
+          ),
+        ],
       ),
     );
   }

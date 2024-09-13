@@ -6,7 +6,7 @@ NIM : H1D022015
 
 Shift Baru: Shift C
 
-### Passing Data dari Form Menuju Tampilan dalam Flutter
+### Passing Data dari Form Menuju Tampilan
 Aplikasi ini terdiri dari dua layar, yaitu Form Input Data dan Tampil Data. Data yang diinputkan pada form akan dikirim ke halaman lain untuk ditampilkan. Berikut adalah proses detail bagaimana data dipassing dari form menuju tampilan:
 
 

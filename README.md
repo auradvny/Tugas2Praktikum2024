@@ -18,6 +18,6 @@ NIM : H1D022015
 Shift Baru: Shift C
 
 ## Screenshot
-Contoh :
-![Lampiran Form](form.png)
-![Lampiran Hasil](hasil.png)
+Tampilan :
+![Lampiran Form](formAura.png)
+![Lampiran Hasil](hasilAura.png)

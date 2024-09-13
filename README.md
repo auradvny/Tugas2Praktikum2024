@@ -12,12 +12,11 @@ Aplikasi ini terdiri dari dua layar, yaitu Form Input Data dan Tampil Data. Data
 
 ##### Pengisian Data di Form (file form_data.dart)
 
-Form terdiri dari tiga TextField untuk menerima input dari pengguna, yaitu:
+Form terdiri dari tiga TextField untuk menerima input dari pengguna. Setiap input akan diambil dari TextEditingController yang terkait dengan masing-masing TextField tersebut.
 
 1. Nama yang disimpan di _namaController.
 2. NIM yang disimpan di _nimController.
 3. Tahun Lahir yang disimpan di _tahunController.
-Setiap input akan diambil dari TextEditingController yang terkait dengan masing-masing TextField tersebut.
 
 ##### Aksi Tombol "Simpan"
 
@@ -29,16 +28,12 @@ Setelah pengguna mengisi form, metode _tombolSimpan() akan memicu fungsi yang me
 
 
 #### Passing Data ke Halaman Tampil Data (file tampil_data.dart)
-
 Data dari form (nama, NIM, dan tahun lahir) dikirim ke halaman Tampil Data menggunakan Navigator dengan metode push dengan membuat halaman baru menggunakan MaterialPageRoute yang membangun objek TampilData.
-
 Pada halaman Tampil Data, data tersebut diterima melalui konstruktor kelas TampilData, dan digunakan untuk ditampilkan di layar.
 
 
 #### Menampilkan Data di Halaman Tampil Data
-
 Pada tampil_data.dart, kelas TampilData menerima data nama, nim, dan tahun melalui konstruktor dan menyimpannya di properti final. Di dalam widget build(), data ini digunakan untuk menghitung umur berdasarkan tahun lahir dan ditampilkan di layar menggunakan widget Text dalam sebuah Column.
-
 Data nama, nim, tahun, dan umur (hasil perhitungan dari DateTime.now().year - tahun) ditampilkan dengan menggunakan metode buildRow yang menampilkan teks dalam format berbaris.
 
 
